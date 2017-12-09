@@ -1,8 +1,8 @@
-var Product = require('../models/product')
+var Product = require('./../models/product')
 
 function index (req, res) {
-    console.log('hey hey')
-    Product.find({}).then((product) => console.log(product))
+    console.log('work!!!!')
+    Product.find({}).then(products => (res.json(products)) )
 }
 
 function addItem (req, res) {
@@ -14,7 +14,7 @@ function deleteItem (req, res) {
 }
 
 module.exports = {
-    index,
+    index: index,
     addItem,
     deleteItem
 }

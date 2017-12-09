@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var productCtrl = requires('../controllers/products')
+var productCtrl = require('./../controllers/products')
 
 router.get('/catalog', productCtrl.index);
 

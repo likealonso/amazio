@@ -8,8 +8,4 @@ var productSchema = new Schema({
     description: String,
 })
 
-// var orderSchema = new Schema({
-//     products: [productSchema]
-// })
-
 module.exports = mongoose.model('Product', productSchema);
